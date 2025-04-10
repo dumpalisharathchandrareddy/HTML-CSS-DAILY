@@ -13,32 +13,67 @@
         box-sizing: border-box;
         margin:0;
     }
-    header{
-        padding: 10px;
+    .header-section{
+        box-sizing: border-box;
+        width:100%;
+        height: auto;
         background-color: white;
     }
-    .name{
+    .header,.navbar{
+        display:inline-block;
+        vertical-align: middle;
+        width:49%;
+    }
 
+    .navbar{
+        background-color: white;
+        padding:5px
+        
+    }
+    .navbar ul{
+            list-style-type: none;
+            text-align: right;
+        
+    }
+    .navbar ul li{
+        display: inline-block;
+        margin-right:10px;
+        font-size: 18px;
+       
+    }
+
+    .name{
         font-size: 30px;
         font-weight:bold;
         text-align: justify;
-   
-
+        margin-left:20px;
     }
     .name:hover{
         cursor: pointer;
     }
 </style>
 <body>
-    
-    <header >
-        <h1 class="name">Sharath Chandra</h1>
+    <div class="header-section">
+
+    <header class="header" >
+        <h1 class="name">
+            Sharath Chandra
+        </h1>
+
+
     </header>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About me</li>
+            <li>Projects</li>
+            <li>Github</li>
+            <li>Expertise</li>
 
-
-
-    <h1 >
+        </ul>
         
-    </h1>
+    </nav>
+    </div>
+
 </body>
 </html>
